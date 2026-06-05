@@ -1,0 +1,10 @@
+apiVersion: v1     # What API should be used to create this object
+kind: Pod          # what object do i want
+metadata:          # What is its name describe the object itself like identity and labels card
+  name: my-pod
+spec:              # What should it look like it kubernetes is a desired state system
+  containers:
+  - name: my-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
